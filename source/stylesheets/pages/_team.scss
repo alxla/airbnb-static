@@ -1,8 +1,8 @@
 h1, h2, h3 {
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: $header-font;
 }
 
 .email {
-  color: #1F74BA;
-  font-size: 28px;
+  color: $email-font-color;
+  font-size: $email-font-size;
 }

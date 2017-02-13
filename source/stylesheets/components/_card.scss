@@ -9,24 +9,25 @@
   border-radius: 10px;
   position: relative;
   opacity: 0.9;
-}
-.card:hover{
-  opacity: 1;
-}
 
-.card .card-category {
+  &:hover{
+    opacity: 1;
+  }
+
+  .card-category {
   text-align: left;
   color: white;
   font-size: 28px;
   position: absolute;
   left: 5px;
   top: 5px;
-}
+  }
 
-.card .card-description {
+  .card-description {
   text-align: left;
   color: white;
   position: absolute;
   left: 5px;
   bottom: 5px;
+  }
 }

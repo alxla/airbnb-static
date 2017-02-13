@@ -20,6 +20,21 @@ $header-font: "Raleway", "Helvetica", "sans-serif";
 $base-size: 16px;
 $base-height: 1.4;
 
+$h2-size: 28px;
+$h2-weight: bold;
+
+$email-font-size: 28px;
+
+$icon-size: 32px;
+$icon-height: 50px;
+$icon-transition: color 0.4s ease;
+
+/* -------------------------------------
+ * Radius
+ * ------------------------------------- */
+
+$radius-circle: 50%;
+
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
@@ -27,6 +42,7 @@ $base-height: 1.4;
 $brand-color: #D23333;
 
 $red: #EE5F5B;
+$darker-red: #ac2626;
 $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
@@ -38,3 +54,12 @@ $gray-dark:    lighten(#000, 20%);   // #333
 $gray:         lighten(#000, 33.5%); // #555
 $gray-light:   lighten(#000, 46.7%); // #777
 $gray-lighter: lighten(#000, 93.5%); // #eee
+
+// Custom colors
+$wrapper-color: #F4F4F4;
+$email-font-color: #1F74BA;
+$gray-middle: #CCCCCC;
+$gray-middle-light: #999999;
+$gray-light-light: #E6E6E6;
+$flashy-yellow: #FFFF00;
+$wagon-link-hover: #da552f;

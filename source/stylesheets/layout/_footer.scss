@@ -1,7 +1,7 @@
 /* Footer design */
 .footer{
-  background: #333333;
-  color: #CCCCCC;
+  background: $gray-dark;
+  color: $gray-middle;
   padding-top: 100px;
   justify-content: space-between;
   align-items: center;
@@ -23,12 +23,16 @@
   flex: 0 0 200px;
 }
 
-.footer .fa{
-  font-size: 32px;
-  line-height: 50px;
-  transition: color 0.4s ease;
+.footer{
+
+  .fa{
+  font-size: $icon-size;
+  line-height: $icon-height;
+  transition: $icon-transition;
+
+    &:hover{
+      color: $flashy-yellow;
+    }
+  }
 }
 
-.footer .fa:hover{
-  color: #FFFF00;
-}
