@@ -11,3 +11,11 @@
   text-align: center;
   color: white;
 }
+
+.banner-flat{
+  @extend .padded;
+  background-image: image-url('card-paris.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}

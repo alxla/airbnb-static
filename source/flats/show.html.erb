@@ -1,10 +1,59 @@
+---
+title: AirBnB Flat
+---
+
 <!-- source/flats/show.html.erb -->
 
 <!-- Read from data.flats with owner's name as key -->
 <% flat = data.flats[owner] %>
 
 <!-- Inject flat data in template -->
-<%= image_tag flat.owner_picture, class: "img-circle" %>
-<p><%= flat.owner_name %></p>
-<h1><%= flat.description %></h1>
-<p><%= flat.city %></p>
+<div class="banner-flat"></div>
+
+<div class="container padded">
+  <div class="row">
+    <div class="col-xs-3">
+    </div>
+    <div class="col-xs-3">
+      <%= image_tag flat.owner_picture, class: "img-circle avatar-resize" %>
+      <p><%= flat.owner_name %></p>
+      <h1><%= flat.description %></h1>
+      <p><%= flat.city %></p>
+    </div>
+    <div class="col-xs-6 grey-box padded">
+      <form action="#">
+        <h2 class="text-center">Book this flat</h2>
+        <div class="form-group">
+          <label>Your email</label>
+          <input type="email" class="form-control" placeholder="bob@gmail.com">
+        </div>
+        <div class="form-group">
+          <label>Your password</label>
+          <input type="password" class="form-control" placeholder="*******">
+        </div>
+        <input type="submit" value="Sign Up" class="btn btn-primary btn-block">
+      </form>
+    </div>
+  </div>
+  <div class="container padded grey-box row-margin">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>About this flat</h3>
+        <p><%= flat.full_description %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <% flat.flat_details.each do |detail| %>
+          <p><%= detail.key %> : <%= detail.value %> </p>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+      </div>
+      <div class="col-xs-6">
+      </div>
+    </div>
+  </div>
+</div>
