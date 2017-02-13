@@ -77,7 +77,7 @@
 }
 .navbar-wagon-search-btn {
   line-height: 40px;
-  color: $grey-lighter;
+  color: $gray-lighter;
   border: none;
   background: transparent;
   position: absolute;
@@ -91,7 +91,7 @@
   line-height: 40px;
   font-weight: lighter;
   color: $gray;
-  border: 1px solid $grey-lighter;
+  border: 1px solid $gray-lighter;
   border-radius: 5px;
   padding: 0 10px;
   font-size: 14px;
@@ -105,8 +105,8 @@
 /* Navbar dropdown menu */
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
-  box-shadow: 1px 1px 4px $grey-lighter;
-  border-color: $grey-lighter;
+  box-shadow: 1px 1px 4px $gray-lighter;
+  border-color: $gray-lighter;
   li > a {
     transition: color 0.3s ease;
     font-weight: lighter !important;
