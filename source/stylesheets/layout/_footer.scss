@@ -1,0 +1,34 @@
+/* Footer design */
+.footer{
+  background: #333333;
+  color: #CCCCCC;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-box{
+  display: flex;
+}
+
+.fa-box{
+  flex: 0 0 60px;
+}
+
+.empty-box{
+  flex: 1 0 auto;
+}
+
+.home-box{
+  flex: 0 0 200px;
+}
+
+.footer .fa{
+  font-size: 32px;
+  line-height: 50px;
+  transition: color 0.4s ease;
+}
+
+.footer .fa:hover{
+  color: #FFFF00;
+}
