@@ -3,7 +3,7 @@ title: Static AirBnB
 ---
 
     <!-- Your banner code -->
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path "background.jpg" %>);">
       <div class="banner-content">
         <h1>Some Stuff</h1>
         <p>Very cool stuff, useful and smart</p>
@@ -15,22 +15,22 @@ title: Static AirBnB
       <div class="container text-center small">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <img src='images/globe.png'>
+            <%= image_tag "globe.png" %>
             <h2>Discover the world</h2>
             <p>The earth is your new home.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <img src='images/dollar.png'>
+            <%= image_tag "dollar.png" %>
             <h2>Pay online</h2>
             <p>No cash issues anymore.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-           <img src='images/beer.png'>
+           <%= image_tag "beer.png" %>
            <h2>Meet people</h2>
             <p>Discover new culture and lifestyle.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <img src='images/heart.png'>
+            <%= image_tag "heart.png" %>
             <h2>Share and love</h2>
             <p>Join a community you will love.</p>
           </div>
@@ -111,32 +111,7 @@ title: Static AirBnB
     </div>
     <!-- Your map code -->
     <div id="map" style="width: 100%; height: 600px;"></div>
-    <!-- Your footer code -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 flex-box">
-            <div class="fa-box">
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </div>
-            <div class="fa-box">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </div>
-            <div class="fa-box">
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </div>
-            <div class="fa-box">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </div>
-            <div class="empty-box">
-            </div>
-            <div class="wagon-box">
-              <p>This is a Airbnb Home challenge @ LeWagon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
